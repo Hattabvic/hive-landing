@@ -1,0 +1,110 @@
+.team {
+  background: var(--bg-navy);
+  padding: 96px 56px;
+  border-top: 1px solid rgba(0, 200, 255, 0.07);
+}
+.inner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.hdr {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* z-index 100 lifts each member above the fixed hex canvas (z-index 99, mix-blend screen)
+   so the photos render solid; hex still shows in the section bg and gaps between tiles. */
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 160px;
+  position: relative;
+  z-index: 100;
+}
+.slotWrap {
+  position: relative;
+  width: 148px;
+  height: 148px;
+}
+.glowRing {
+  position: absolute;
+  inset: -4px;
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  background: rgba(0, 200, 255, 0.55);
+  z-index: -1;
+  transition: background 0.3s;
+}
+.slotWrap:hover .glowRing {
+  background: rgba(0, 200, 255, 0.85);
+}
+.memberFemale .slotWrap:hover .glowRing {
+  background: rgba(255, 100, 200, 1);
+  box-shadow:
+    0 0 30px rgba(255, 100, 200, 0.8),
+    inset 0 0 20px rgba(255, 100, 200, 0.4);
+}
+.photo {
+  width: 148px;
+  height: 148px;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg, #102e4a 0%, #0d2438 100%);
+}
+.name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.role {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--cyan);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Female member styling */
+.memberFemale .glowRing {
+  background: rgba(255, 100, 200, 0.55);
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+}
+.memberFemale .glowRing:hover {
+  background: rgba(255, 100, 200, 1);
+  box-shadow:
+    0 0 30px rgba(255, 100, 200, 0.8),
+    inset 0 0 20px rgba(255, 100, 200, 0.4);
+}
+
+/* stagger animation (driven by .reveal → .in on the grid) */
+.grid .member {
+  opacity: 0;
+}
+:global(.reveal.in) .member {
+  animation: memberIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes memberIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

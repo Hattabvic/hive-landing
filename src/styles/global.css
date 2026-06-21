@@ -1,0 +1,82 @@
+/* Global resets and shared utility classes */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg-body);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* ── Scroll reveal ── */
+.reveal, .rl, .rr {
+  transition: opacity .82s ease-out, transform .82s ease-out;
+}
+.reveal { opacity: 0; transform: translateY(34px); }
+.rl     { opacity: 0; transform: translateX(-52px); }
+.rr     { opacity: 0; transform: translateX(52px); }
+.reveal.in, .rl.in, .rr.in { opacity: 1; transform: none; }
+.d1 { transition-delay: .1s; }
+.d2 { transition-delay: .2s; }
+.d3 { transition-delay: .3s; }
+.d4 { transition-delay: .4s; }
+
+/* ── Pulsing dot ── */
+.pdot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: currentColor;
+  animation: pdot 1.5s ease-in-out infinite;
+  animation-play-state: var(--anim-play);
+  display: inline-block;
+}
+
+/* ── Scan line ── */
+.scan {
+  position: fixed; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan) 38%, transparent);
+  animation: scan 5s linear infinite;
+  animation-play-state: var(--anim-play);
+  pointer-events: none; opacity: .22; z-index: 100;
+}
+
+/* ── Shared section typography ── */
+.sec-label {
+  font-family: var(--font-mono);
+  font-size: 13px; color: var(--cyan);
+  letter-spacing: .25em; text-transform: uppercase; margin-bottom: 14px;
+}
+.sec-title {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(30px, 4vw, 50px);
+  letter-spacing: -.02em; line-height: 1.05; margin-bottom: 16px;
+}
+.sec-body {
+  font-size: 16px; line-height: 1.78; color: var(--text-secondary);
+}
+
+/* ── Buttons ── */
+.btn-p {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: var(--cyan); color: var(--bg-body);
+  font-family: var(--font-display); font-size: 12px; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; text-decoration: none;
+  padding: 13px 30px; border-radius: 6px;
+  box-shadow: 0 0 28px rgba(0,200,255,.22);
+  transition: all .25s;
+}
+.btn-p:hover {
+  background: var(--cyan-bright);
+  box-shadow: 0 0 42px rgba(0,200,255,.42);
+  transform: translateY(-2px);
+}
+.btn-g {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: transparent; color: var(--text-secondary);
+  font-family: var(--font-display); font-size: 12px; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase; text-decoration: none;
+  padding: 13px 26px; border-radius: 6px;
+  border: 1px solid rgba(139,174,196,.22);
+  transition: all .25s;
+}
+.btn-g:hover { color: var(--cyan); border-color: rgba(0,200,255,.38); }

@@ -1,0 +1,58 @@
+/* H.I.V.E. Design Tokens — CSS Custom Properties */
+
+@font-face { font-family: 'Inter'; src: url('/fonts/Inter_24pt-Light.ttf') format('truetype'); font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('/fonts/Inter_24pt-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('/fonts/Inter_24pt-Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('/fonts/Inter_24pt-SemiBold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('/fonts/Inter_24pt-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url('/fonts/Inter_24pt-ExtraBold.ttf') format('truetype'); font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('/fonts/Montserrat-Thin.ttf') format('truetype'); font-weight: 100; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('/fonts/Montserrat-Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('/fonts/Montserrat-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('/fonts/Montserrat-ExtraBold.ttf') format('truetype'); font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Montserrat'; src: url('/fonts/Montserrat-Black.ttf') format('truetype'); font-weight: 900; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('/fonts/JetBrainsMono-Light.ttf') format('truetype'); font-weight: 300; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('/fonts/JetBrainsMono-Light.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('/fonts/JetBrainsMono-Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('/fonts/JetBrainsMono-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'JetBrains Mono'; src: url('/fonts/JetBrainsMono-ExtraBold.ttf') format('truetype'); font-weight: 800; font-display: swap; }
+
+:root {
+  /* Fonts */
+  --font-display: 'Montserrat', system-ui, sans-serif;
+  --font-sans:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Backgrounds */
+  --bg-body:  #050505;
+  --bg-navy:  #0D1B2A;
+  --bg-deep:  #070D14;
+  --bg-card:  #0a1420;
+
+  /* Accent */
+  --cyan:        #00C8FF;
+  --cyan-bright: #00f0ff;
+  --cyan-light:  #7FE4FF;
+  --cyan-muted:  #8BAEC4;
+
+  /* Status */
+  --red:          #ff003c;
+  --green:        #00ff9f;
+  --amber:        #FFB703;
+  --purple:       #8b5cf6;
+  --purple-alt:   #9B5DE5;
+
+  /* Text */
+  --text-primary:   #F0F4F8;
+  --text-secondary: #8BAEC4;
+  --text-muted:     #64748b;
+
+  /* Borders */
+  --border-subtle: rgba(51,65,85,.5);
+  --border-cyan:   rgba(0,200,255,.2);
+
+  /* Animation play state — controlled by tweaks panel */
+  --anim-play: running;
+  --tw-rgb: 0,200,255;
+}

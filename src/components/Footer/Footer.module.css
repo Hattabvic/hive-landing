@@ -1,0 +1,5 @@
+.footer { background: #020202; border-top: 1px solid rgba(51,65,85,.35); padding: 32px 56px; }
+.inner { max-width: 1320px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.brand { font-family: var(--font-display); font-weight: 900; font-size: 18px; color: var(--cyan); letter-spacing: .12em; }
+.info { font-family: var(--font-mono); font-size: 11px; color: #9fbace; letter-spacing: .12em; text-align: center; line-height: 1.9; }
+.status { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 10px; color: var(--green); letter-spacing: .12em; }

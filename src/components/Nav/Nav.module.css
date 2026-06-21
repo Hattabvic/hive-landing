@@ -1,0 +1,48 @@
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 56px;
+  border-bottom: 1px solid rgba(0,200,255,.08);
+  background: rgba(5,5,5,.92);
+  backdrop-filter: blur(18px);
+  transition: all .3s;
+}
+.nav.scrolled {
+  background: rgba(2,2,2,.98);
+  backdrop-filter: blur(24px);
+  padding: 12px 56px;
+  border-color: rgba(0,200,255,.15);
+}
+
+.brand {
+  display: flex; align-items: center; gap: 10px; text-decoration: none;
+}
+.brand img {
+  width: 58px; height: 58px; object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(0,200,255,.75));
+}
+.brand span {
+  font-family: var(--font-display); font-weight: 900; font-size: 28px;
+  color: var(--cyan); letter-spacing: .14em;
+}
+
+.links {
+  display: flex; gap: 4px; list-style: none;
+}
+.links a {
+  font-size: 12px; font-weight: 600; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--text-secondary);
+  text-decoration: none; transition: all .25s;
+  padding: 8px 18px; border-radius: 22px;
+}
+.links a:hover {
+  color: var(--cyan);
+  background: rgba(0,200,255,.09);
+  box-shadow: 0 0 0 1px rgba(0,200,255,.15);
+}
+
+.status {
+  display: flex; align-items: center; gap: 7px;
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: .14em; color: var(--green); text-transform: uppercase;
+}

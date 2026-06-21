@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "mcp__dd72b9f9-082a-4e2a-b8dc-e65b18fc566b__how_to",
+      "mcp__dd72b9f9-082a-4e2a-b8dc-e65b18fc566b__create",
+      "Bash(node -e \"require\\('docx'\\); console.log\\('docx ok'\\)\")",
+      "Bash(npm ls *)"
+    ]
+  }
+}
