@@ -14,7 +14,7 @@ const MEMBERS = [
   { id: 4, name: "Mohamed Shabaan", role: "", image: "/assets/shabaan.jpeg" },
   { id: 5, name: "Belal Morsi", role: "", image: "/assets/belal.jpeg" },
   { id: 3, name: "Amr Ossama", role: "", image: "/assets/amr.jpeg" },
-  { id: 6, name: "Abelrahman Fawzy 06", role: "", image: "" },
+  { id: 6, name: "Abelrahman Fawzy 06", role: "", image: "/assets/fawzy.jpeg" },
   { id: 7, name: "Mostafa Ibrahim", role: "", image: "/assets/mostafa.jpeg" },
   { id: 8, name: "Mohamed Othman", role: "", image: "/assets/othman.jpeg" },
   { id: 9, name: "Abdelrahman ahmed", role: "", image: "/assets/roqa.jpeg" },
