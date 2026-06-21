@@ -351,12 +351,12 @@ export function Products() {
               <div className={styles.bopSub}>Hands-on agent missions · Aligned to Zero to Secure modules</div>
               <div className={styles.bopGrid}>
                 {[
-                  ['Lab 01', 'Terminal Basics & Linux Navigation'],
-                  ['Lab 02', 'Network Scanning with Nmap'],
-                  ['Lab 03', 'Packet Capture & Wireshark'],
-                  ['Lab 04', 'SSH Brute Force with Hydra'],
-                  ['Lab 05', 'Honeypot Deployment & Cowrie'],
-                  ['Lab 06', 'SIEM Log Analysis & Alerting'],
+                  ['Lab 01', 'Introduction To Wireshark'],
+                  ['Lab 02', 'Network Traffic Analysis using Wireshark'],
+                  ['Lab 03', 'Network Scanning'],
+                  ['Lab 04', 'Introduction to Password Attacks And  Security Testing'],
+                  ['Lab 05', 'SSH Attack & Log Analysis Using SIEM'],
+                  ['Lab 06', 'FTP Attack & Log Analysis Using SIEM'],
                 ].map(([n, t]) => (
                   <div key={n} className={styles.bopCh}>
                     <div className={styles.bopChN}>{n}</div>
