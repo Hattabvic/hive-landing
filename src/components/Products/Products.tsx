@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Products.module.css';
 
 /* ── Kit viewer ── */
@@ -286,7 +287,7 @@ export function Products() {
                   <li>Filterable log table with full JSON payload inspector</li>
                   <li>KPI cards: Total Attacks, Unique Attackers, Critical Events</li>
                 </ul>
-                <br /><a href="#siem-demo" className="btn-p" style={{ width: 'fit-content' }}>See Live Demo ↓</a>
+                <br /><Link to="/siem-demo" className="btn-p" style={{ width: 'fit-content' }}>See Live Demo →</Link>
               </div>
               <div className="rl"><DashMini /></div>
             </div>

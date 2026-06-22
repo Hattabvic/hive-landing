@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
 
 const LINKS = [
-  { href: '#products',     label: 'Products' },
-  { href: '#siem-demo',   label: 'SIEM Demo' },
-  { href: '#mission',     label: 'Mission' },
-  { href: '#architecture', label: 'Architecture' },
-  { href: '#team',        label: 'Team' },
+  { to: '/products',     label: 'Products' },
+  { to: '/siem-demo',    label: 'SIEM Demo' },
+  { to: '/mission',      label: 'Mission' },
+  { to: '/architecture', label: 'Architecture' },
+  { to: '/team',         label: 'Team' },
 ];
 
 export function Nav() {
@@ -20,15 +21,20 @@ export function Nav() {
 
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
-      <a href="#" className={styles.brand}>
+      <Link to="/" className={styles.brand}>
         <img src="/assets/hive-logo.png" alt="HIVE logo" />
         <span>HIVE</span>
-      </a>
+      </Link>
 
       <ul className={styles.links}>
         {LINKS.map((l) => (
-          <li key={l.href}>
-            <a href={l.href}>{l.label}</a>
+          <li key={l.to}>
+            <NavLink
+              to={l.to}
+              className={({ isActive }) => (isActive ? styles.active : '')}
+            >
+              {l.label}
+            </NavLink>
           </li>
         ))}
       </ul>

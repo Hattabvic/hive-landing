@@ -1,0 +1,5 @@
+/* Sub-pages start below the fixed nav (the Home page Hero handles its own spacing). */
+.page {
+  padding-top: 96px;
+  min-height: 100vh;
+}

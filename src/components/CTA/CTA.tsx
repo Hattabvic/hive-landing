@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './CTA.module.css';
 
 export function CTA() {
@@ -15,9 +16,9 @@ export function CTA() {
           Self-contained, open-source, and built for learners aged 13–16.
         </p>
         <div className={styles.actions}>
-          <a href="#products"     className="btn-p">Explore Products</a>
-          <a href="#siem-demo"   className="btn-g">Live SIEM Demo</a>
-          <a href="#architecture" className="btn-g">Architecture</a>
+          <Link to="/products"     className="btn-p">Explore Products</Link>
+          <Link to="/siem-demo"    className="btn-g">Live SIEM Demo</Link>
+          <Link to="/architecture" className="btn-g">Architecture</Link>
         </div>
 
         {/* ── Contact ── */}

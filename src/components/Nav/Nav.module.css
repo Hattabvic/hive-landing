@@ -40,6 +40,11 @@
   background: rgba(0,200,255,.09);
   box-shadow: 0 0 0 1px rgba(0,200,255,.15);
 }
+.links a.active {
+  color: var(--cyan);
+  background: rgba(0,200,255,.12);
+  box-shadow: 0 0 0 1px rgba(0,200,255,.22);
+}
 
 .status {
   display: flex; align-items: center; gap: 7px;

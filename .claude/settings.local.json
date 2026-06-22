@@ -10,7 +10,9 @@
       "Bash(node srs-gen.cjs)",
       "Bash(python \"C:/Users/NEXT STORE/AppData/Roaming/Claude/local-agent-mode-sessions/skills-plugin/2c5ff9e2-c7a4-45c9-87b4-abcbafe4b9a1/26f1057f-5475-4f3d-9d34-36775eaade1c/skills/docx/scripts/office/validate.py\" HIVE_Landing_Page_SRS.docx)",
       "Bash(pip install *)",
-      "Bash(pandoc HIVE_Landing_Page_SRS.docx -t plain)"
+      "Bash(pandoc HIVE_Landing_Page_SRS.docx -t plain)",
+      "PowerShell(npm install react-router-dom)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 5173 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { $p = Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue; \"{0}  PID={1}  {2}\" -f $_.LocalPort, $_.OwningProcess, $p.ProcessName })"
     ]
   }
 }

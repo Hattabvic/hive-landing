@@ -58,6 +58,9 @@
   object-fit: cover;
   display: block;
   background: linear-gradient(135deg, #102e4a 0%, #0d2438 100%);
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .name {
   font-family: var(--font-display);
