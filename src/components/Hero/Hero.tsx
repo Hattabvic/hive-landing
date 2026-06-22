@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { initHexCanvas } from '../../lib/hexCanvas';
 import styles from './Hero.module.css';
 
@@ -30,8 +31,8 @@ export function Hero() {
           </p>
 
           <div className={styles.cta}>
-            <a href="#products" className="btn-p">Explore Products ↓</a>
-            <a href="#siem-demo" className="btn-g">Live SIEM Demo</a>
+            <Link to="/products" className="btn-p">Explore Products →</Link>
+            <Link to="/siem-demo" className="btn-g">Live SIEM Demo</Link>
           </div>
         </div>
 

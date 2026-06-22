@@ -4,14 +4,14 @@ const HEX_CLIP = "polygon(50% 0%,93% 25%,93% 75%,50% 100%,7% 75%,7% 25%)";
 
 const MEMBERS = [
   {
-    id: 1,name: "Abdalla Hattb",role: "",image: "/assets/abdalla.png",},
+    id: 1,name: "Abdalla Hattb",role: "",image: "/assets/abdalla.jpg",},
   {
     id: 2,
     name: "Abdelrahman Ibrahim",
     role: "",
     image: "/assets/3obd.jpg",
   },
-  { id: 4, name: "Mohamed Shabaan", role: "", image: "/assets/shabaan.jpeg" },
+  { id: 4, name: "Mohamed Shabaan", role: "", image: "/assets/shabaan.jpg" },
   { id: 5, name: "Belal Morsi", role: "", image: "/assets/belal.jpeg" },
   { id: 3, name: "Amr Ossama", role: "", image: "/assets/amr.jpeg" },
   { id: 6, name: "Abelrahman Fawzy", role: "", image: "/assets/fawzy.jpeg" },
