@@ -173,8 +173,8 @@ function BooksVis({ onText, onLabs, textOpen, labsOpen }: {
       >
         <div className={styles.bookBar} style={{ background: 'var(--cyan)' }} />
         <div className={styles.bookInner} style={{ background: '#070d18' }}>
-          <div className={styles.bTag} style={{ color: 'var(--cyan)' }}>Module 01 · 02 · 03</div>
-          <div className={styles.bBrand} style={{ color: 'var(--cyan)' }}>H.I.V.E.</div>
+          <div className={styles.bTag} style={{ color: 'var(--cyan)' }}>Chapter 01 · 02 · 03</div>
+          <div className={styles.bBrand} style={{ color: 'var(--cyan)' }}>HIVE</div>
           <div className={styles.bDiv} style={{ background: 'var(--cyan)' }} />
           <div className={styles.bMain}>Zero<br/>to Secure.</div>
           <div className={styles.bSub}>A Beginner's Guide to Cybersecurity</div>
@@ -302,7 +302,7 @@ export function Products() {
                 <p className={styles.prodSub} style={{ color: 'var(--purple-alt)' }}>Curriculum-Aligned Textbooks</p>
                 <p className={styles.prodDesc}>Two companion books engineered for students aged 13–16. The main textbook covers OS & Linux, Networking, and Security fundamentals. The labs workbook delivers hands-on agent missions aligned to each module.</p>
                 <ul className={styles.feats}>
-                  <li>213+ pages across 3 modules — OS & Linux, Networks, Security</li>
+                  <li>213+ pages across 3 Chapters — OS & Linux, Networks, Security</li>
                   <li>5 callout types: Agent Tasks, Tips, Alerts, Notes, Lab Connectors</li>
                   <li>Hacker aesthetic meets academic structure — terminal motifs throughout</li>
                   
@@ -328,13 +328,13 @@ export function Products() {
           <div className={styles.panelSpacer} />
           {bookPanel === 'text' && (
             <div className={styles.textPanel}>
-              <div className={styles.textBopTitle}>Zero to Secure — Modules</div>
-              <div className={styles.textBopSub}>Core textbook · 213 pages across 3 foundational modules</div>
+              <div className={styles.textBopTitle}>Zero to Secure — Chapters</div>
+              <div className={styles.textBopSub}>Core textbook · 213 pages across 3 foundational Chapters</div>
               <div className={styles.textBopGrid}>
                 {[
-                  ['Module 01', 'OS & Linux',            'Command line, filesystem, permissions, processes & package management'],
-                  ['Module 02', 'Network Fundamentals',   'TCP/IP, ports & protocols, packets, scanning & traffic analysis'],
-                  ['Module 03', 'Security Fundamentals',  'Threats & attacks, defense, honeypots, logging & SIEM monitoring'],
+                  ['Chapters 01', 'OS & Linux',            'Command line, filesystem, permissions, processes & package management'],
+                  ['Chapters 02', 'Network Fundamentals',   'TCP/IP, ports & protocols, packets, scanning & traffic analysis'],
+                  ['Chapters 03', 'Security Fundamentals',  'Threats & attacks, defense, honeypots, logging & SIEM monitoring'],
                 ].map(([n, t, d]) => (
                   <div key={n} className={styles.textBopCh}>
                     <div className={styles.textBopChN}>{n}</div>
@@ -348,7 +348,7 @@ export function Products() {
           {bookPanel === 'labs' && (
             <div className={styles.labsPanel}>
               <div className={styles.bopTitle}>Labs Workbook — Contents</div>
-              <div className={styles.bopSub}>Hands-on agent missions · Aligned to Zero to Secure modules</div>
+              <div className={styles.bopSub}>Hands-on agent missions · Aligned to Zero to Secure Chapters</div>
               <div className={styles.bopGrid}>
                 {[
                   ['Lab 01', 'Introduction To Wireshark'],
